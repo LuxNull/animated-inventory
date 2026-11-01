@@ -1,0 +1,60 @@
+.inventory{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);/* This defines the number of columns in the inventory grid */
+    grid-template-rows: repeat(3, 100px);/* This defines the number of rows in the inventory grid */
+    grid-template-areas:
+        "axe crossbow shield"
+        "sword heal1 bow"
+        "poison1 heal2 poison2";
+    gap: 10px;
+}
+
+.inventory:hover{
+    gap: 70px;
+    transition: 3s;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    border: 3px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.heal1{
+    grid-area: heal1;
+}
+.axe{
+    grid-area: axe;
+}
+.crossbow{
+    grid-area: crossbow;
+}
+.sword{
+    grid-area: sword;
+}
+.shield{
+    grid-area: shield;
+}
+.bow{
+    grid-area: bow;
+}
+.heal2{
+    grid-area: heal2;
+}
+.poison1{
+    grid-area: poison1;
+}
+.poison2{
+    grid-area: poison2;
+}
